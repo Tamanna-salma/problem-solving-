@@ -99,3 +99,34 @@ function capitalizeWords(str) {
     return words.join(" ");
 }
 console.log(capitalizeWords("hello world")); 
+
+// Problem 9: Find the Factorial of a Number
+function factorial(num) {
+  let result = 1;
+  for (let i = 1; i <= num; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log(factorial(5)); 
+
+
+// Problem 10: PingPong Challenge:
+
+function pingPong() {
+  for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("PingPong");
+    } else if (i % 3 === 0) {
+      console.log("Ping");
+    } else if (i % 5 === 0) {
+      console.log("Pong");
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+pingPong();
+
+
