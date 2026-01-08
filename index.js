@@ -28,4 +28,29 @@ function countVowels(text) {
     return count;
 }
 
-console.log(countVowels("Programming")); 
+console.log(countVowels("Programming"));
+
+
+// /Problem 3: Check for Palindrome:
+
+function isPalindrome(str) {
+  const reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+console.log(isPalindrome("madam")); 
+console.log(isPalindrome("hello")); 
+
+
+// Problem 4: Find the Maximum Number:
+
+function findMax(arr) {
+    let max = arr[0];
+    for (let num of arr) {
+        if (num > max) {
+            max = num;
+        }
+    }
+    return max;
+}
+console.log(findMax([5, 1, 9, 3])); 
