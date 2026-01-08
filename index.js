@@ -54,3 +54,27 @@ function findMax(arr) {
     return max;
 }
 console.log(findMax([5, 1, 9, 3])); 
+
+
+// Problem 5: Remove Duplicates from an Array  :
+
+const number = [1,2,3,2,4,4];  
+function noDuplicates(arr){
+const newArr= [... new Set(arr)];
+return newArr;
+}
+console.log(noDuplicates(number));
+
+
+// Problem 6: Sum of All Numbers in an Array:
+
+function sumArray(arr) {
+    let sum = 0;
+    for (let num of arr) {
+        sum += num;
+    }
+    return sum;
+}
+console.log(sumArray([1, 2, 3, 4])); 
+
+
