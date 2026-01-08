@@ -77,4 +77,25 @@ function sumArray(arr) {
 }
 console.log(sumArray([1, 2, 3, 4])); 
 
+// Problem 7: Find Even Numbers in an Array:
 
+function Even(arr) {
+    let result = [];
+    for (let num of arr) {
+        if (num % 2 === 0) {
+            result.push(num);
+        }
+    }
+    return result;
+}
+console.log(Even([1, 2, 3, 4, 5, 6]));
+
+// Problem 8: Capitalize First Letter of Each Word: 
+function capitalizeWords(str) {
+    let words = str.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+    }
+    return words.join(" ");
+}
+console.log(capitalizeWords("hello world")); 
